@@ -21,7 +21,7 @@ pip install pyautogui schedule
 ### 基本使用
 
 ```bash
-python keep.py
+python3 keep.py
 ```
 
 运行后会提示选择活跃时间段：
@@ -31,7 +31,7 @@ python keep.py
 ### 命令行参数
 
 ```bash
-python keep.py [选项]
+python3 keep.py [选项]
 ```
 
 ### 后台运行
@@ -40,13 +40,13 @@ python keep.py [选项]
 
 ```bash
 # 后台运行，输出重定向到 nohup.out
-nohup python keep.py &
+nohup python3 keep.py &
 
 # 后台运行，指定输出文件
-nohup python keep.py > keep.log 2>&1 &
+nohup python3 keep.py > keep.log 2>&1 &
 
 # 后台运行，带参数
-nohup python keep.py -t 600 -a "9:00-18:00" > keep.log 2>&1 &
+nohup python3 keep.py -t 600 -a "9:00-18:00" > keep.log 2>&1 &
 ```
 
 #### 查看运行状态
@@ -84,13 +84,13 @@ pkill -9 -f keep.py
 
 ```bash
 # 设置 5 分钟检测间隔
-python keep.py -t 300
+python3 keep.py -t 300
 
 # 设置自定义活跃时间段
-python keep.py -a "8:00-18:00"
+python3 keep.py -a "8:00-18:00"
 
 # 组合使用
-python keep.py -t 300 -a "8:00-18:00"
+python3 keep.py -t 300 -a "8:00-18:00"
 ```
 
 ## 工作原理
